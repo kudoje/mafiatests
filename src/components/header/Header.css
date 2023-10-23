@@ -1,0 +1,123 @@
+.header__container {
+    background-color: var(--container-color);
+    position: fixed;
+    width: 100%;
+    min-height: 0;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.container {
+    background-color: var(--container-color);
+    display:  flex;
+    justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+}
+
+.nav__button {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-link{
+    color: var(--title-color);
+    font-family: var(--body-font);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+}
+
+.header__menu{
+    
+}
+.menu{
+}
+.menu__list{
+    display: flex;
+}
+.menu__item{
+
+}
+
+.menu__item:not(:last-child){
+    margin: 0px 3.8rem 0px 0px;
+}
+
+.menu__link{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    line-height: 150%;
+}
+
+.sign__button {
+    margin-left: 62px;
+}
+
+.sign__up {
+    background-color: var(--title-color);
+    color: var(--container-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.sign__in {
+    background-color: var(--container-color);
+    color: var(--title-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+    padding: 12px;
+    border: 3px solid var(--title-color);
+    border-radius: 15px;
+    margin-left: 1rem;
+}
+
+.menu__toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .sign__up {
+        margin-right: 0.75rem;
+    }
+
+    .sign__in {
+        margin-left: 0.75rem;
+    }
+
+    .sign__button {
+        margin-left: 48px;
+    }
+    
+    .menu__item:not(:last-child){
+        margin: 0px 2.5rem 0px 0px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .sign__button {
+        margin-left: 32px;
+    }
+    
+    .menu__item:not(:last-child){
+        margin: 0px 1.5rem 0px 0px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+        .nav__button {
+        display: none;
+    }
+
+    .menu__toggle {
+        display: block;
+    }
+}

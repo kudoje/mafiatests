@@ -1,0 +1,24 @@
+.menu__burger-links {
+  right: 0;
+  position: absolute;
+  margin-top: 70px;
+  background-color: var(--container-color);
+}
+
+.menu__burger-nav{
+
+}
+
+.menu__burger-list {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__burger-item {
+  margin: 20px 10px;
+}
+
+.menu__burger-link {
+
+}
